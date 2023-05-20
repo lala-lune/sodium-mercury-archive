@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css">
+        <link rel = "icon" href = "media/application.png" type = "image/gif">
+        <title> Application </title>
+    </head>
+
+    <body onload="alertBack()">
+        <div class="text">
+            <img src="media/title bar.png" class="titleBar">   
+            <h1 class="mercuryArchive"> Mercury Archive </h1>
+            <h2 class="subHeader"> Application </h2>
+            <br>   
+            <div class="contentText">
+                Today, radiation is a common and valuable tool in medicine, research and industry. 
+                It is used in medicine to diagnose illnesses, and in high doses, to treat diseases 
+                such as cancer. Also, high doses of radiation are used to kill harmful bacteria in 
+                food and to extend the shelf life of fresh produce. <b class="cursorBlink">|</b>
+            </div>
+            <button onclick = "backFunction()" class="appBackButton"> << </button>
+        </div>
+        <script>
+            function backFunction() {
+            document.querySelector('body').classList.add("appBackButton");
+            setTimeout(function() {
+                window.history.back();
+            }, 300);
+            }
+
+            function alertBack() {
+                alert("Click the X button to go back.");
+            }
+        </script>
+
+        
+    </body>
+</html>

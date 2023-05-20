@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css">
+        <link rel = "icon" href = "media/definition.png" type = "image/gif">
+        <title> Definition </title>
+    </head>
+
+    <body onload="alertBack()">
+        <div class="text">
+            <img src="media/title bar.png" class="titleBar">   
+            <h1 class="mercuryArchive"> Mercury Archive </h1>
+            <h2 class="subHeader"> Definition </h2>
+            <br>
+            <div class="contentText">
+                Radioactivity is the act of emitting radiation spontaneously. This is done by an atomic nucleus that,
+                for some reason, is unstable; it "wants" to give up some energy in order to shift to a more stable 
+                configuration. It is the emission of ionizing radiation or particles caused by the spontaneous
+                disintegration of atomic nuclei. <b class="cursorBlink">|</b>
+            </div>
+            <button onclick = "backFunction()" class="backButton"> << </button>
+        </div>
+        <script>
+            function backFunction() {
+            document.querySelector('body').classList.add("backButton");
+            setTimeout(function() {
+                window.history.back();
+            }, 300);
+            }
+
+            function alertBack() {
+                alert("Click the X button to go back.");
+            }
+        </script>
+
+        
+    </body>
+</html>

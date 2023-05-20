@@ -1,0 +1,202 @@
+body{
+    color:white;
+    margin:40px;
+    background-image: url("media/biohazard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Anonymous Pro";
+}
+header{
+    background-color: #000000;
+    padding: 20px;
+    display: block;
+    margin: -40px -40px 20px -40px;
+}
+a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+}
+.mercuryArchive{
+    text-align: center;
+    color:#FFFFFF;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.profile{
+    background-color:rgb(0, 0, 0);
+    padding: 40px; 
+    margin: 0px 0px 15px 0px;
+    width:50%;
+    border:solid #FFFFFF;
+    border-width: 35px 8px 8px 8px;
+    box-shadow: 1px 2px 5px 5px rgba(0, 0, 0, 0.44);
+}
+.profile hr{
+    width: 30%;
+    margin-left: 0;
+}
+.pageIntroduction{
+    background-color:rgb(0, 0, 0);
+    padding: 40px;
+    margin: 0px 0px 15px 0px;
+    width: 35%;
+    border:solid #FFFFFF;
+    border-width: 35px 8px 8px 8px;
+    box-shadow: 1px 2px 5px 5px rgba(0, 0, 0, 0.44);
+}
+.overview{
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+    border:solid #FFFFFF;
+    border-width: 35px 8px 8px 8px;
+    box-shadow: 1px 2px 5px 5px rgba(0, 0, 0, 0.44);
+}
+.ovhead{
+    text-align: center;
+    margin-top: -20px;
+}
+.definition, .sigPeople, .application{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border:solid 2px #FFFFFF;
+    transition: 0.2s;
+}
+.definition:hover, .sigPeople:hover, .application:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+.username{
+    width:28%;
+    background-color: rgb(0, 0, 0);
+    padding:5px;
+    margin: 5px 0px 0px 0px;
+    transition: 0.5s;
+}
+.username:focus{
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    color:#000000;
+    padding:5px;
+}
+input[type=number]{
+    border:none;
+    width:20%;
+    background-color:rgb(0, 0, 0);
+    color:#ffffff;
+    padding:5px;
+    margin: 5px 0px 0px 0px;
+    transition: 0.5s;
+}
+input[type=number]:focus{
+    outline:none;
+    background-color:rgb(255, 255, 255);
+    color: #000000;
+    padding:5px;
+}
+footer{
+    padding:50px;
+    background-color: #000000;
+    text-align: center;
+    margin: 10px -40px -40px -40px;
+}
+.contentText{
+    text-align: center;
+    padding: 50px;
+    margin: -20px 150px 15px 150px;
+    font-size: 20px;
+}
+.text{  
+    background-color: rgb(0, 0, 0);
+    color:white;
+    padding:20px;
+    border:solid white;
+    border-width: 35px 8px 8px 8px;
+    box-shadow: 1px 2px 5px 5px rgba(0, 0, 0, 0.44);
+    text-align: center;
+    margin: 0px 100px 0px 100px;
+}
+.backButton{
+    border:none;
+    padding:10px;
+    cursor: pointer;
+    transform: translate(610px, -355px);
+    opacity:0;
+    transition: opacity 0.3s ease-in-out;
+}
+.subHeader{
+    margin:-20px 0px 5px 0px;
+    color: rgb(118, 235, 54);
+}
+.titleBar{
+    position: absolute;
+    height:60px;
+    transform: translate(550px, -74px);
+}
+.cursorBlink{
+    animation: cursorBlink 1s steps(5, start) infinite;
+    -webkit-animation: cursorBlink 1s steps(5, start) infinite;
+}
+@keyframes cursorBlink {
+        to {
+          visibility: hidden;
+        }
+      }
+@-webkit-keyframes cursorBlink {
+        to {
+          visibility: hidden;
+        }
+}
+
+.curie, .rutherford, .becquerel, .roentgen{
+    width:250px;
+    border-radius: 5px;
+}
+#curie b, #rutherford b, #becquerel b, #roentgen b{
+    color: rgb(118, 235, 54);
+}
+.peopleBackButton{
+    border:none;
+    padding:10px;
+    cursor: pointer;
+    transform: translate(610px, -3120px);
+    opacity:0;
+    transition: opacity 0.3s ease-in-out;
+}
+.appBackButton{
+    border:none;
+    padding:10px;
+    cursor: pointer;
+    transform: translate(610px, -345px);
+    opacity:0;
+    transition: opacity 0.3s ease-in-out;
+}
+.collapsible {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  border:solid 2px #FFFFFF;
+  transition: 0.2s;
+}
+.collapsible:hover{
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+}
+.funFact {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #000000;
+  padding: 20px 30px 20px 30px;
+  border-left:solid 2px #FFFFFF;
+  border-right:solid 2px #FFFFFF;
+  border-bottom:solid 2px #FFFFFF;
+}
